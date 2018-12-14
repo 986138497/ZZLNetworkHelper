@@ -37,8 +37,7 @@
 		ABFB21011D96534400C07D28 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFB20EE1D96534400C07D28 /* UIProgressView+AFNetworking.m */; };
 		ABFB21021D96534400C07D28 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFB20F01D96534400C07D28 /* UIRefreshControl+AFNetworking.m */; };
 		ABFB21031D96534400C07D28 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFB20F21D96534400C07D28 /* UIWebView+AFNetworking.m */; };
-		ABFB21071D96538D00C07D28 /* HttpManagerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFB21061D96538D00C07D28 /* HttpManagerHelper.m */; };
-		ABFB210A1D9653A200C07D28 /* HttpNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFB21091D9653A200C07D28 /* HttpNetworkCache.m */; };
+		ABFB21071D96538D00C07D28 /* ZZLNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFB21061D96538D00C07D28 /* ZZLNetwork.m */; };
 		ABFB210D1D965B1C00C07D28 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFB210C1D965B1C00C07D28 /* libsqlite3.0.tbd */; };
 		ABFB21101D96765800C07D28 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFB210F1D96765800C07D28 /* SystemConfiguration.framework */; };
 		ABFB21151D96768300C07D28 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFB21121D96768300C07D28 /* SimplePing.m */; };
@@ -126,10 +125,8 @@
 		ABFB20F01D96534400C07D28 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		ABFB20F11D96534400C07D28 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		ABFB20F21D96534400C07D28 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		ABFB21051D96538D00C07D28 /* HttpManagerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManagerHelper.h; sourceTree = "<group>"; };
-		ABFB21061D96538D00C07D28 /* HttpManagerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManagerHelper.m; sourceTree = "<group>"; };
-		ABFB21081D9653A200C07D28 /* HttpNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpNetworkCache.h; sourceTree = "<group>"; };
-		ABFB21091D9653A200C07D28 /* HttpNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpNetworkCache.m; sourceTree = "<group>"; };
+		ABFB21051D96538D00C07D28 /* ZZLNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZLNetwork.h; sourceTree = "<group>"; };
+		ABFB21061D96538D00C07D28 /* ZZLNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZLNetwork.m; sourceTree = "<group>"; };
 		ABFB210C1D965B1C00C07D28 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		ABFB210F1D96765800C07D28 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		ABFB21111D96768300C07D28 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
@@ -322,10 +319,8 @@
 		ABFB21041D96535500C07D28 /* ZZLNetWorkHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				ABFB21051D96538D00C07D28 /* HttpManagerHelper.h */,
-				ABFB21061D96538D00C07D28 /* HttpManagerHelper.m */,
-				ABFB21081D9653A200C07D28 /* HttpNetworkCache.h */,
-				ABFB21091D9653A200C07D28 /* HttpNetworkCache.m */,
+				ABFB21051D96538D00C07D28 /* ZZLNetwork.h */,
+				ABFB21061D96538D00C07D28 /* ZZLNetwork.m */,
 			);
 			name = ZZLNetWorkHelpers;
 			sourceTree = "<group>";
@@ -498,7 +493,7 @@
 				ABFB20FE1D96534400C07D28 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				ABFB21011D96534400C07D28 /* UIProgressView+AFNetworking.m in Sources */,
 				ABFB20C91D96534000C07D28 /* YYCache.m in Sources */,
-				ABFB21071D96538D00C07D28 /* HttpManagerHelper.m in Sources */,
+				ABFB21071D96538D00C07D28 /* ZZLNetwork.m in Sources */,
 				ABFB20FD1D96534400C07D28 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				ABFB20FC1D96534400C07D28 /* AFImageDownloader.m in Sources */,
 				ABFB20FF1D96534400C07D28 /* UIButton+AFNetworking.m in Sources */,
@@ -512,7 +507,6 @@
 				ABFB21191D9676B000C07D28 /* SimplePinger.m in Sources */,
 				ABFB21021D96534400C07D28 /* UIRefreshControl+AFNetworking.m in Sources */,
 				ABFB20F71D96534400C07D28 /* AFURLResponseSerialization.m in Sources */,
-				ABFB210A1D9653A200C07D28 /* HttpNetworkCache.m in Sources */,
 				AB0377EF1D9A0CC600AAB3D7 /* NSTimer+Kit.m in Sources */,
 				ABFB21151D96768300C07D28 /* SimplePing.m in Sources */,
 				ABFB20F81D96534400C07D28 /* AFURLSessionManager.m in Sources */,

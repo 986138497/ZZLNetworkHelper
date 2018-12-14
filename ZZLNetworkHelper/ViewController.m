@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HttpManagerHelper.h"
+#import "ZZLNetwork.h"
 #import "ZZLNetObsercer.h"
 #import "NSTimer+Kit.h"
 @interface ViewController ()
